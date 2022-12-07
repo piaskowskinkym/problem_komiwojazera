@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">cockwojażer</string>
+    <string name="title">Problem Komiwojażera</string>
+    <string name="description">
+        Aplikacja implementuje rozwiązanie problemu Komiwojażera w celu wypisania najkrótszej trasypomiedzy podanymi przez użytkownika lub wygenerowanymi losowo miastami.
+        By przejść dalej wybierz jedną z dwóch opcji poniżej</string>
+    <string name="btnCustom">Wprowadź własne odległości i miasta</string>
+    <string name="btnRandom">Użyj losowo wygenerowanych odległości</string>
+    <string name="btnExit">Zamknij aplikację</string>
+    <string-array name="miasta">
+        <item>Osaka</item>
+        <item>Kyoto</item>
+        <item>Tokio</item>
+        <item>Nara</item>
+        <item>Sapporo</item>
+        <item>Fukuoka</item>
+        <item>Nagoya</item>
+        <item>Sendai</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
