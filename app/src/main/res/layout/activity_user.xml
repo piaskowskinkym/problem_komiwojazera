@@ -7,7 +7,7 @@
     tools:context=".UserActivity">
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/originS"
         android:layout_width="393dp"
         android:layout_height="55dp"
         android:entries="@array/miasta"
@@ -18,7 +18,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/destinationS"
         android:layout_width="393dp"
         android:layout_height="55dp"
         android:entries="@array/miasta"
@@ -34,36 +34,36 @@
         android:layout_height="36dp"
         android:layout_marginBottom="1dp"
         android:rotation="-90"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintBottom_toTopOf="@+id/destinationS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/originS"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="?attr/homeAsUpIndicator" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/odległośćET"
+        android:layout_width="334dp"
+        android:layout_height="51dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text="@string/enter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner3"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintTop_toBottomOf="@+id/destinationS"
+        app:layout_constraintVertical_bias="0.059" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/dodajBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.424" />
@@ -75,9 +75,21 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="244dp"
+        android:layout_height="184dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
