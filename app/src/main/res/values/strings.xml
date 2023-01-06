@@ -7,16 +7,20 @@
     <string name="btnCustom">Wprowadź własne odległości i miasta</string>
     <string name="btnRandom">Użyj losowo wygenerowanych odległości</string>
     <string name="btnExit">Zamknij aplikację</string>
-    <string-array name="miasta">
+    <string-array name="cities">
         <item>Skurgwy</item>
         <item>Młotkowo</item>
         <item>Wielki Wór</item>
         <item>Swornegacie</item>
         <item>Chujmiętki</item>
         <item>Mała Wieś przy Drodze</item>
-        <item>Grzegorz</item>
+        <item>Małe swornegacie</item>
         <item>Bity Kamień</item>
     </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="enter">Wprowadź swoją wartość tutaj</string>
+    <string name="distance">Dodaj dystans</string>
+    <string name="compute">Oblicz najkrótszą trasę</string>
+    <string name="information">Tutaj pojawi się ścieżka oraz łączna ilość przebytch kilometrów</string>
+    <string name="arrayInfo">Naciśnij by wyświetlić poniżej tablicę odległości</string>
 </resources>
