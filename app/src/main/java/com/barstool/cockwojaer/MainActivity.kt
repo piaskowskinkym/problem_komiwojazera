@@ -26,7 +26,9 @@ class MainActivity : AppCompatActivity() {
             val intent =  Intent(this, RandomActivity::class.java)
             startActivity(intent)
         }
-
+        closeBtn.setOnClickListener {
+            finishAffinity()
+        }
 
     }
 }
