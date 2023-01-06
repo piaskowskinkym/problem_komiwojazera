@@ -23,4 +23,6 @@
     <string name="compute">Oblicz najkrótszą trasę</string>
     <string name="information">Tutaj pojawi się ścieżka oraz łączna ilość przebytch kilometrów</string>
     <string name="arrayInfo">Naciśnij by wyświetlić poniżej tablicę odległości</string>
+    <string name="screenshoot">Naciśnij by wykonać zrzut ekranu</string>
+    <string name="random">Wygeneruj losowy dystans</string>
 </resources>
