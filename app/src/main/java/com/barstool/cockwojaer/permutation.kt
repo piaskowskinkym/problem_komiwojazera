@@ -72,4 +72,5 @@ class permutation {
         // Return true as the next_permutation is done
         return true
     }
+
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import com.barstool.cockwojaer.algorithm
 
 class MainActivity : AppCompatActivity() {
@@ -16,8 +17,9 @@ class MainActivity : AppCompatActivity() {
 
 
         activityUser.setOnClickListener(){
-             val intent =  Intent(this, UserActivity::class.java)
-            startActivity(intent)
+            val intent =  Intent(this, UserActivity::class.java)
+           startActivity(intent)
+
 
         }
 
