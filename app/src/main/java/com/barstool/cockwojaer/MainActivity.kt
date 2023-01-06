@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+        activityRandom.setOnClickListener {
+            val intent =  Intent(this, RandomActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
