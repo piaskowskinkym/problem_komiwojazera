@@ -26,4 +26,5 @@
     <string name="screenshoot">Naciśnij by wykonać zrzut ekranu</string>
     <string name="random">Wygeneruj losowy dystans</string>
     <string name="randomInfo">Wybierz z list powyżej miasto od którego chcesz poprowadzić odległość a potem naciśnij guzik poniżej by wygenerować losową odległość</string>
+    <string name="goback">Kliknij by wrócić do menu</string>
 </resources>

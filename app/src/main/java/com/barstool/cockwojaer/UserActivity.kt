@@ -1,16 +1,28 @@
 package com.barstool.cockwojaer
 
-import android.graphics.Color
+import android.Manifest
+import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_user.*
+import android.view.View
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.os.Environment
+import java.io.ByteArrayOutputStream
+import java.io.File
+import java.io.FileOutputStream
+
 
 class UserActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
         var dodajBtn = findViewById<Button>(R.id.dodajBtn)
+        var backBtn = findViewById<Button>(R.id.backBtn)
+
 
 
         var originSpinner = findViewById<Spinner>(R.id.originS)
@@ -27,6 +39,18 @@ class UserActivity : AppCompatActivity() {
             .removePrefix("+")
             .all { it in '0'..'9' }
 
+        fun takeScreenshotOfView(view: View, height: Int, width: Int): Bitmap {
+            val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
+            val canvas = Canvas(bitmap)
+            val bgDrawable = view.background
+            if (bgDrawable != null) {
+                bgDrawable.draw(canvas)
+            } else {
+                canvas.drawColor(Color.WHITE)
+            }
+            view.draw(canvas)
+            return bitmap
+        }
         fun liczenieTrasy(){
 
 
@@ -104,6 +128,33 @@ class UserActivity : AppCompatActivity() {
             liczenieTrasy()
 
         }
+        backBtn.setOnClickListener {
+            val intent =  Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
+        screenShotBtn.setOnClickListener {
+            var file: File? = null
+            var view = findViewById<View?>(android.R.id.content)
+            var bitmap = takeScreenshotOfView(view,view.height,view.width)
+            return@setOnClickListener try {
+                
+                file = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString() +File.separator + "wynik.png")
+                file.createNewFile()
+                val bos = ByteArrayOutputStream()
+                bitmap.compress(Bitmap.CompressFormat.PNG,0,bos)
+                val bitmapdata = bos.toByteArray()
+
+                val fos = FileOutputStream(file)
+                fos.write(bitmapdata)
+                fos.flush()
+                fos.close()
+
+            }catch (e:java.lang.Exception){
+                e.printStackTrace()
+
+            }
+
+        }
 
 }}

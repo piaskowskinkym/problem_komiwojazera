@@ -62,7 +62,7 @@
         android:id="@+id/dodajBtn"
         android:layout_width="209dp"
         android:layout_height="65dp"
-        android:backgroundTint="#0B0B0B"
+        android:backgroundTint="#3F51B5"
         android:text="@string/distance"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         android:id="@+id/algoBtn"
         android:layout_width="279dp"
         android:layout_height="65dp"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#3F51B5"
         android:text="@string/compute"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,10 +95,10 @@
         app:layout_constraintVertical_bias="0.609" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/screenShotBtn"
         android:layout_width="275dp"
         android:layout_height="81dp"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#3F51B5"
         android:text="@string/screenshoot"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,5 +106,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.778" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/goback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
