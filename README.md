@@ -1,8 +1,8 @@
-# Aplikacja Komiwojarzer
+# Aplikacja Komiwojażer
  Aplikacja implementuje rozwiązanie problemu Komiwojażera w celu wypisania najkrótszej trasy pomiedzy 
  podanymi przez użytkownika lub wygenerowanymi losowo miastami.
  
-# Problem Komiwojarzera
+# Problem Komiwojażera
 (ang. travelling salesman problem, TSP)– zagadnienie optymalizacyjne, polegające na znalezieniu minimalnego cyklu Hamiltona w pełnym grafie ważonym.
 Nazwa pochodzi od typowej ilustracji problemu, przedstawiającej go z punktu widzenia wędrownego sprzedawcy (komiwojażera): dane jest n miast, które komiwojażer ma odwiedzić, oraz odległość / cena podróży / czas podróży pomiędzy każdą parą miast. Celem jest znalezienie najkrótszej / najtańszej / najszybszej drogi łączącej wszystkie miasta, zaczynającej się i kończącej się w określonym punkcie.     
 https://pl.wikipedia.org/wiki/Problem_komiwojażera
